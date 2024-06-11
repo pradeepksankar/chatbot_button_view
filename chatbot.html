@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Chat Window</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Chatbot button view in actual website </h1>
+    <br>
+    <h2> Here are some things my bot can help you with: </h2>
+    <p> Hello </p>
+    <p> Start Over </p>
+    <p> Ask me anything </p>
+    <br>
+
+    <!-- Button to open the chat window -->
+    <button id="openChatBtn">Open Chat</button>
+
+    <!-- The chat window -->
+    <div id="chatPopup" class="chat-popup">
+        <div class="chat-header">
+            <span>Chat</span>
+            <button id="closeChatBtn">&times;</button>
+        </div>
+        <iframe src="chatbot_source" frameborder="0"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
